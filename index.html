@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Compare weather in Warsaw with cities that have better weather conditions"
+    />
+    <title>FOMO Weather - Find Better Weather Than Warsaw</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>☀️ FOMO Weather</h1>
+        <p class="subtitle">Discover cities with better weather than Warsaw</p>
+      </header>
+
+      <main>
+        <div id="loading" class="loading">Loading weather data...</div>
+        <div class="weather-grid" id="weatherGrid">
+          <!-- Weather cards will be dynamically inserted here -->
+        </div>
+      </main>
+
+      <footer>
+        <button id="refreshBtn">🔄 Refresh Weather</button>
+        <p>Last updated: <span id="lastUpdated">Never</span></p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
